@@ -2,7 +2,8 @@
 AeroGrid FastAPI Backend Service
 """
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="AeroGrid API", version="0.1.0")
@@ -39,3 +40,8 @@ def validate_city(payload: dict):
 
 # Router and config updates
 from backend.config import *
+
+
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    return JSONResponse(status_code=500, content={"error": str(exc)})
