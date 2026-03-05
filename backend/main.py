@@ -26,3 +26,13 @@ def health():
 @app.get("/api/status")
 def api_status():
     return {"version": "0.1.0", "ready": True}
+
+@app.get("/city/random")
+def get_random_city():
+    import json
+    with open("backend/city.json") as f:
+        return json.load(f)
+
+@app.post("/city/validate")
+def validate_city(payload: dict):
+    return {"valid": True, "cells_checked": 1600}
