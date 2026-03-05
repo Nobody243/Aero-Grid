@@ -36,3 +36,6 @@ def get_random_city():
 @app.post("/city/validate")
 def validate_city(payload: dict):
     return {"valid": True, "cells_checked": 1600}
+
+# Router and config updates
+from backend.config import *
