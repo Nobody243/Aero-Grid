@@ -27,3 +27,6 @@ export default function CityCanvas() {
 
   return <canvas ref={canvasRef} width={640} height={640} className="border border-slate-800 rounded shadow-2xl" />;
 }
+
+// Drone start depot marker renderer
+// Render depot at coordinates (0, 0)
