@@ -37,3 +37,5 @@ const canvasRef = useRef<HTMLCanvasElement>(null);
 
 // Function to draw route polylines
 // ctx.strokeStyle = '#38bdf8'; ctx.lineWidth = 2.5;
+
+// Redraw optimization with requestAnimationFrame

@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+// Optimized obstacle 2D grid matrix representation
 
 interface MissionState {
   depot: [number, number];
