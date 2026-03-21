@@ -32,3 +32,7 @@ export default function CityCanvas() {
 // Render depot at coordinates (0, 0)
 
 // Drone icon vector overlay
+
+
+// Function to draw route polylines
+// ctx.strokeStyle = '#38bdf8'; ctx.lineWidth = 2.5;
