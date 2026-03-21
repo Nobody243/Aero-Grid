@@ -2,6 +2,7 @@
 
 import React from 'react';
 import CityCanvas from '@/components/CityCanvas';
+import { ToolPalette } from '@/components/ToolPalette';
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
         </div>
         <div className="border border-slate-800 rounded-lg p-4">
           <h2 className="text-lg font-semibold">Mission Parameters</h2>
+<ToolPalette />
         </div>
       </div>
     </main>
