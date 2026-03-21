@@ -25,5 +25,5 @@ export default function CityCanvas() {
     }
   }, []);
 
-  return <canvas ref={canvasRef} width={600} height={600} className="border border-slate-800 rounded shadow-2xl" />;
+  return <canvas ref={canvasRef} width={640} height={640} className="border border-slate-800 rounded shadow-2xl" />;
 }
