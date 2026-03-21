@@ -84,3 +84,6 @@ export const NavBar: React.FC = () => {
     </nav>
   );
 };
+
+// Connected with PageTransition
+export function NavBar
