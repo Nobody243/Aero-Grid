@@ -3,7 +3,8 @@
 import React, { useEffect, useRef } from 'react';
 
 export default function CityCanvas() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  // Added isDragging obstacle brush state
+const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const cvs = canvasRef.current;

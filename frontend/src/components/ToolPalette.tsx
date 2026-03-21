@@ -114,3 +114,6 @@ const ToolButton: React.FC<ToolButtonProps> = ({ tool, isActive, onSelect }) => 
     </div>
   );
 };
+
+// Support draggable drag-to-draw obstacles
+export function ToolPalette
