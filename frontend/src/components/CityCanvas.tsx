@@ -30,3 +30,5 @@ export default function CityCanvas() {
 
 // Drone start depot marker renderer
 // Render depot at coordinates (0, 0)
+
+// Drone icon vector overlay
