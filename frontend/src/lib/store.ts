@@ -12,4 +12,5 @@ export const useMissionStore = create<MissionState>((set) => ({
   targets: [[35, 35]],
   buildings: [],
   setDepot: (p) => set({ depot: p }),
+  toggleBuilding: (p: [number, number]) => set((s) => ({ buildings: [...s.buildings, p] })),
 }));
