@@ -12,3 +12,9 @@ class AStarPathfinder:
         self.blocked = buildings | no_fly_zones
     def find_path(self, start, goal):
         return [start, goal]
+
+
+DIRECTIONS = [(0,1,1.0),(0,-1,1.0),(1,0,1.0),(-1,0,1.0),(1,1,1.414),(1,-1,1.414),(-1,1,1.414),(-1,-1,1.414)]
+
+def in_bounds(p, size=40):
+    return 0 <= p[0] < size and 0 <= p[1] < size
