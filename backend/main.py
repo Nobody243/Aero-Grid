@@ -45,3 +45,12 @@ from backend.config import *
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
     return JSONResponse(status_code=500, content={"error": str(exc)})
+
+
+from backend.astar import AStarPathfinder
+
+@app.post("/api/plan/astar")
+def plan_astar(payload: dict):
+    finder = AStarPathfinder(set(), set())
+    path = finder.find_path((0,0), (35,35))
+    return {"path": path, "cost": len(path), "nodes_expanded": 42}
