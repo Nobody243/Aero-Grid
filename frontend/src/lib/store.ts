@@ -13,6 +13,8 @@ export const useMissionStore = create<MissionState>((set) => ({
   targets: [[35, 35]],
   buildings: [],
   activeRoute: [] as [number, number][],
+  astarPath: [] as [number, number][],
+  metrics: { distance: 0, time_seconds: 0 },
   setDepot: (p) => set({ depot: p }),
   toggleBuilding: (p: [number, number]) => set((s) => ({ buildings: [...s.buildings, p] })),
 }));
