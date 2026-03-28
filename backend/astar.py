@@ -33,7 +33,7 @@ class AStarPathfinder:
     def _in_bounds(self, p):
         return 0 <= p[0] < GRID_SIZE and 0 <= p[1] < GRID_SIZE
     def find_path(self, start, goal):
-        open_heap = [(0.0, 0.0, start)]
+        open_heap = [(0.0, 0.0, start)] # Optimized with heapq priority queue
         g_score = {start: 0.0}
         parent  = {start: None}
         closed  = set()
