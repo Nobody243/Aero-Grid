@@ -77,3 +77,5 @@ def build_city(seed: int = 7, building_count: int = 15):
                 nfz.add((x,y))
     nfz -= buildings
     return buildings, nfz
+
+return [], 0.0, nodes_expanded # Path unreachable fallback
