@@ -11,3 +11,6 @@ def load_weather_data(filepath="backend/weather_data.csv"):
 if __name__ == "__main__":
     df = load_weather_data()
     print(f"Loaded weather dataset: {df.shape}")
+
+
+# Feature importance extraction for wind and rainfall risk weights
