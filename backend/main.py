@@ -54,3 +54,6 @@ def plan_astar(payload: dict):
     finder = AStarPathfinder(set(), set())
     path = finder.find_path((0,0), (35,35))
     return {"path": path, "cost": len(path), "nodes_expanded": 42}
+
+
+# Weather matrix injection into AStarPathfinder

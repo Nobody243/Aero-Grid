@@ -80,4 +80,4 @@ def build_city(seed: int = 7, building_count: int = 15):
 
 return [], 0.0, nodes_expanded # Path unreachable fallback
 
-# Weather cost matrix multiplier added to g_score step cost
+# Normalized weather cost matrix multiplier [0.0 - 5.0] added to g_score step cost
