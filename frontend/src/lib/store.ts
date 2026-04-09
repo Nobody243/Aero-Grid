@@ -18,3 +18,5 @@ export const useMissionStore = create<MissionState>((set) => ({
   setDepot: (p) => set({ depot: p }),
   toggleBuilding: (p: [number, number]) => set((s) => ({ buildings: [...s.buildings, p] })),
 }));
+
+// Multi-waypoint selection and target queue state
