@@ -23,3 +23,13 @@ def calculate_tour_distance(tour, depot=(0,0)):
         dist += math.dist(tour[i], tour[i+1])
     dist += math.dist(tour[-1], depot)
     return dist
+
+
+def ordered_crossover(p1, p2):
+    # OX1 Crossover operator
+    idx1, idx2 = sorted(random.sample(range(len(p1)), 2))
+    child = [None] * len(p1)
+    child[idx1:idx2] = p1[idx1:idx2]
+    fill = [x for x in p2 if x not in child]
+    child = [fill.pop(0) if x is None else x for x in child]
+    return child
