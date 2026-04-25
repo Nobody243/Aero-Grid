@@ -9,5 +9,9 @@ class GeneticOptimizer:
         self.pop_size = pop_size
         self.mutation_rate = mutation_rate
 
+    def _init_population(self):
+        pop = [random.sample(self.targets, len(self.targets)) for _ in range(self.pop_size)]
+        return pop
+
     def optimize(self, generations=100):
         return self.targets
