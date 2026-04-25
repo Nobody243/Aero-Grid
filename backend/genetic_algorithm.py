@@ -15,3 +15,11 @@ class GeneticOptimizer:
 
     def optimize(self, generations=100):
         return self.targets
+
+
+def calculate_tour_distance(tour, depot=(0,0)):
+    dist = math.dist(depot, tour[0])
+    for i in range(len(tour)-1):
+        dist += math.dist(tour[i], tour[i+1])
+    dist += math.dist(tour[-1], depot)
+    return dist
