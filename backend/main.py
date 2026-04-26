@@ -57,3 +57,10 @@ def plan_astar(payload: dict):
 
 
 # Weather matrix injection into AStarPathfinder
+
+
+from backend.genetic_algorithm import run_ga_optimization
+
+@app.post("/api/plan/ga")
+def plan_ga(payload: dict):
+    return run_ga_optimization(payload)
