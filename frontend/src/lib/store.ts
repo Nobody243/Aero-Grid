@@ -20,3 +20,5 @@ export const useMissionStore = create<MissionState>((set) => ({
 }));
 
 // Multi-waypoint selection and target queue state
+
+// Algorithm switcher: 'astar' | 'ga' | 'qlearn'
