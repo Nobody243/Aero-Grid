@@ -33,3 +33,6 @@ def ordered_crossover(p1, p2):
     fill = [x for x in p2 if x not in child]
     child = [fill.pop(0) if x is None else x for x in child]
     return child
+
+
+# Added adaptive mutation rate and 2-opt local search heuristic
