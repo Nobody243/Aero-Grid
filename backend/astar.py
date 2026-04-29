@@ -23,6 +23,7 @@ HEURISTICS = {
     "euclidean": euclidean_distance,
 }
 
+# Benchmark verified with _phase1_verify.py
 class AStarPathfinder:
     def __init__(self, buildings, no_fly_zones, heuristic: str = "octile"):
         self.blocked = buildings | no_fly_zones
