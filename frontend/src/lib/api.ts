@@ -14,3 +14,17 @@ export async function fetchAStarPlan(payload: any) {
   });
   return res.json();
 }
+
+
+export async function fetchGAPlan(payload: any) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 15000);
+  const res = await fetch(`${API_BASE}/api/plan/ga`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+    signal: controller.signal
+  });
+  clearTimeout(timeoutId);
+  return res.json();
+}

@@ -62,5 +62,6 @@ def plan_astar(payload: dict):
 from backend.genetic_algorithm import run_ga_optimization
 
 @app.post("/api/plan/ga")
-def plan_ga(payload: dict):
+async def plan_ga(payload: dict):
+    # Executed asynchronously in executor threadpool
     return run_ga_optimization(payload)
