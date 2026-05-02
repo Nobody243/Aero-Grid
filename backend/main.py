@@ -38,7 +38,8 @@ def get_random_city():
 def validate_city(payload: dict):
     return {"valid": True, "cells_checked": 1600}
 
-# Router and config updates
+# Clean modular GA imports
+from backend.genetic_algorithm import GeneticOptimizer
 from backend.config import *
 
 
