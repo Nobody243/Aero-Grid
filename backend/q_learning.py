@@ -13,3 +13,13 @@ class QLearningAgent:
         self.gamma = gamma
         self.epsilon = epsilon
         self.q_table = {}
+
+
+    def get_state_key(self, pos, target):
+        return (pos[0], pos[1], target[0], target[1])
+
+    def choose_action(self, state):
+        if random.random() < self.epsilon:
+            return random.randint(0, len(ACTIONS)-1)
+        q_vals = [self.q_table.get((state, a), 0.0) for a in range(len(ACTIONS))]
+        return int(np.argmax(q_vals))
