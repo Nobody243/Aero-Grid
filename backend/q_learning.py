@@ -23,3 +23,10 @@ class QLearningAgent:
             return random.randint(0, len(ACTIONS)-1)
         q_vals = [self.q_table.get((state, a), 0.0) for a in range(len(ACTIONS))]
         return int(np.argmax(q_vals))
+
+
+    def update_q(self, state, action, reward, next_state):
+        current_q = self.q_table.get((state, action), 0.0)
+        max_next_q = max([self.q_table.get((next_state, a), 0.0) for a in range(len(ACTIONS))])
+        td_target = reward + self.gamma * max_next_q
+        self.q_table[(state, action)] = current_q + self.alpha * (td_target - current_q)
