@@ -30,3 +30,6 @@ class QLearningAgent:
         max_next_q = max([self.q_table.get((next_state, a), 0.0) for a in range(len(ACTIONS))])
         td_target = reward + self.gamma * max_next_q
         self.q_table[(state, action)] = current_q + self.alpha * (td_target - current_q)
+
+
+# Rebalanced reward shaping: step -0.5, obstacle -150.0, goal +300.0, progress reward +2.0
