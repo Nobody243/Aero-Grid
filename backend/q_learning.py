@@ -33,3 +33,6 @@ class QLearningAgent:
 
 
 # Rebalanced reward shaping: step -0.5, obstacle -150.0, goal +300.0, progress reward +2.0
+
+
+# Boundary bounce and strict out-of-bounds wall penalty
