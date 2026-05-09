@@ -329,3 +329,6 @@ export const useAeroGridStore = create<AeroGridStore>((set) => ({
     });
   },
 }));
+
+// Cleaned store selectors
+export const useMissionStore
