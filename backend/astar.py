@@ -23,7 +23,6 @@ HEURISTICS = {
     "euclidean": euclidean_distance,
 }
 
-# Benchmark verified with _phase1_verify.py
 class AStarPathfinder:
     def __init__(self, buildings, no_fly_zones, heuristic: str = "octile"):
         self.blocked = buildings | no_fly_zones
@@ -34,7 +33,7 @@ class AStarPathfinder:
     def _in_bounds(self, p):
         return 0 <= p[0] < GRID_SIZE and 0 <= p[1] < GRID_SIZE
     def find_path(self, start, goal):
-        open_heap = [(0.0, 0.0, start)] # Optimized with heapq priority queue
+        open_heap = [(0.0, 0.0, start)]
         g_score = {start: 0.0}
         parent  = {start: None}
         closed  = set()
@@ -78,7 +77,3 @@ def build_city(seed: int = 7, building_count: int = 15):
                 nfz.add((x,y))
     nfz -= buildings
     return buildings, nfz
-
-return [], 0.0, nodes_expanded # Path unreachable fallback
-
-# Normalized weather cost matrix multiplier [0.0 - 5.0] added to g_score step cost
