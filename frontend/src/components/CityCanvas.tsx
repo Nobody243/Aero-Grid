@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from 'react';
 export default function CityCanvas() {
   // Added isDragging obstacle brush state
 // Weather layer alpha rendering overlay
+// Real-time Q-learning trail playback
 const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
