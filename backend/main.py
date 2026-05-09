@@ -7,6 +7,7 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="AeroGrid API", version="0.1.0")
+# Batch episode execution and caching
 
 app.add_middleware(
     CORSMiddleware,
