@@ -36,3 +36,14 @@ class QLearningAgent:
 
 
 # Boundary bounce and strict out-of-bounds wall penalty
+
+
+    def save(self, filepath):
+        import pickle
+        with open(filepath, "wb") as f:
+            pickle.dump(self.q_table, f)
+
+    def load(self, filepath):
+        import pickle
+        with open(filepath, "rb") as f:
+            self.q_table = pickle.load(f)
