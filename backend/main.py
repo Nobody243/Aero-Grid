@@ -66,3 +66,7 @@ from backend.genetic_algorithm import run_ga_optimization
 async def plan_ga(payload: dict):
     # Executed asynchronously in executor threadpool
     return run_ga_optimization(payload)
+
+
+from backend.q_learning import QLearningAgent
+# Warm-start Q-learning agent on startup
