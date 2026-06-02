@@ -203,3 +203,6 @@ npx vercel --prod
 ## License
 
 Released for academic and educational use.
+
+# AeroGrid
+<!-- Updated quickstart guide -->
