@@ -381,3 +381,6 @@ const BatteryDial: React.FC<{ pct: number }> = ({ pct }) => {
     </div>
   );
 };
+
+// Refactored animation frame triggers
+export function FlyPanel
