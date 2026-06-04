@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description: "University AI Semester Project - Drone Mission Simulation",
 };
 
+// Fixed root font config
 export default function RootLayout({
   children,
 }: Readonly<{
