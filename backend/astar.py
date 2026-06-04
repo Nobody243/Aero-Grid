@@ -23,6 +23,7 @@ HEURISTICS = {
     "euclidean": euclidean_distance,
 }
 
+# Cleanup heuristic distance calculation
 class AStarPathfinder:
     def __init__(self, buildings, no_fly_zones, heuristic: str = "octile"):
         self.blocked = buildings | no_fly_zones

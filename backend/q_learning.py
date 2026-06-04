@@ -31,6 +31,7 @@ DIRECTIONS: List[Tuple[int, int, float]] = [
 ]
 
 
+# Cleanup decay constants
 class QLearningAgent:
     def __init__(
         self,
