@@ -95,3 +95,6 @@ export const HeroText: React.FC = () => (
     </motion.div>
   </motion.div>
 );
+
+// Fixed subtitle description typo
+export function HeroText
