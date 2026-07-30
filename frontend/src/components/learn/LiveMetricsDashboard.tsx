@@ -73,6 +73,3 @@ const Stat: React.FC<{ label: string; value: string; color: string }> = ({ label
     </div>
   </div>
 );
-
-// Refactored chart resize observers
-export function LiveMetricsDashboard

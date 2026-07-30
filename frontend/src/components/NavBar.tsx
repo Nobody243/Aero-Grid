@@ -84,6 +84,3 @@ export const NavBar: React.FC = () => {
     </nav>
   );
 };
-
-// Fixed unused variable warnings
-export function NavBar

@@ -109,6 +109,3 @@ const Header: React.FC<React.PropsWithChildren<{ tone?: Tone }>> = ({ tone = 'mu
 const Body: React.FC<React.PropsWithChildren> = ({ children }) => (
   <div className="col-start-2 text-[10px] text-[#6b7fa3] leading-relaxed">{children}</div>
 );
-
-// Displays path blocked notification
-export function ValidationPanel

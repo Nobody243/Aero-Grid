@@ -13,7 +13,6 @@ const CityScene3D = dynamic(() => import('@/components/landing/CityScene3D'), {
   loading: () => <SceneFallback />,
 });
 
-// Fixed layout padding typo
 export default function HeroPage() {
   return (
     <div className="relative h-[calc(100vh-52px)] bg-[#06090f] overflow-hidden">

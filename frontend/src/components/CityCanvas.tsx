@@ -684,6 +684,3 @@ export const CityCanvas: React.FC<CityCanvasProps> = ({
     </div>
   );
 };
-
-// Refactored canvas render loop
-export default function CityCanvas

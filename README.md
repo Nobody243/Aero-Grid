@@ -203,7 +203,3 @@ npx vercel --prod
 ## License
 
 Released for academic and educational use.
-
-# AeroGrid
-
-Docker container and cloud deployment ready.

@@ -247,6 +247,3 @@ const ConvergenceSkeleton: React.FC<{ isRunning: boolean }> = ({ isRunning }) =>
     )}
   </>
 );
-
-// Cleaned up optimize state props
-export function OptimizePanel

@@ -392,7 +392,3 @@ const Slider: React.FC<{
     />
   </div>
 );
-
-// Enhanced with ML evaluation charts
-// Cleaned up event listeners
-export function WeatherPanel

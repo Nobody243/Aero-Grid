@@ -36,10 +36,6 @@ docs_url = None if settings.is_production else "/docs"
 redoc_url = None if settings.is_production else "/redoc"
 openapi_url = None if settings.is_production else "/openapi.json"
 
-# Cleaned API route tags
-# Formatted PEP8
-# Modular route registration refactor
-# Production uvicorn runner configured for Docker container
 app = FastAPI(
     title="Aero-Grid API",
     version="2.0.0",

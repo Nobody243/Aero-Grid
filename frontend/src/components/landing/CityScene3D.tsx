@@ -81,7 +81,6 @@ const generateBuildings = (seed: number) => {
   return buildings;
 };
 
-// Fixed ambient light intensity typo
 export default function CityScene3D() {
   const buildings = useMemo(() => generateBuildings(11), []);
   return (

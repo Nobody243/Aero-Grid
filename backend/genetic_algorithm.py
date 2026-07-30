@@ -172,6 +172,3 @@ if __name__ == "__main__":
     print(f"Best route: {best}")
     improvement = (1 - dist / naive_dist) * 100
     print(f"Improvement: {improvement:.1f}%")
-
-# Refactored crossover matrix
-class GeneticOptimizer:
