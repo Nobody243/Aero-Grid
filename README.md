@@ -56,6 +56,8 @@ aero-grid/
     astar.py                 A* with octile / manhattan / euclidean heuristics
     q_learning.py            Tabular Q-Learning agent and greedy replay utilities
     data_pipeline.py         Generates weather_data.csv from rule-based synthesis
+    tests_sqa_security.py    Comprehensive SQA & security test suite
+    _phase1_verify.py        Integration verification script for AI endpoints
     models/                  Persisted scikit-learn models (joblib)
     requirements.txt
     .env.example             Template for local backend env vars
@@ -83,6 +85,7 @@ aero-grid/
     .env.example             Template: NEXT_PUBLIC_API_URL
     package.json
   render.yaml                Render deployment config (web service, env vars)
+  vercel.json                Vercel deployment configuration
   .gitignore
 ```
 
@@ -91,21 +94,26 @@ aero-grid/
 ## Local Development
 
 ### Prerequisites
-- Python 3.12
+- Python 3.11+
 - Node.js 20+, npm
 
 ### 1. Backend
 
 ```bash
 cd backend
-py -3.12 -m venv venv312
-venv312\Scripts\activate          # Windows
-# source venv312/bin/activate     # macOS / Linux
+python -m venv venv
+venv\Scripts\activate          # Windows
+# source venv/bin/activate     # macOS / Linux
 pip install -r requirements.txt
 uvicorn main:app --reload --host 127.0.0.1 --port 8000
 ```
 
 Interactive API docs are available at `http://localhost:8000/docs` (disabled in production).
+
+**Run SQA & Security Tests:**
+```bash
+python tests_sqa_security.py
+```
 
 ### 2. Frontend
 
@@ -127,7 +135,8 @@ Then run:
 npm run dev
 ```
 
-Open `http://localhost:3000`. The frontend reads `NEXT_PUBLIC_API_URL` as the backend base URL.
+Open `http://localhost:3000`. The frontend reads `NEXT_PUBLIC_API_URL` as the backend base URL (and automatically defaults to the live Render backend when deployed in production).
+
 
 ---
 
