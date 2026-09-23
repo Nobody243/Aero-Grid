@@ -6,7 +6,7 @@ __pycache__/
 *.egg
 *.egg-info/
 .Python
-build/
+/build/
 develop-eggs/
 dist/
 downloads/
@@ -53,7 +53,7 @@ node_modules/
 # Next build output
 .next/
 out/
-build/
+/frontend/build/
 
 # Logs
 npm-debug.log*
@@ -63,14 +63,15 @@ yarn-error.log*
 
 # TypeScript
 *.tsbuildinfo
-next-env.d.ts
 
 # ── Environment / secrets ────────────────────────────────────────────────────
 .env
 .env.*
-!.env.example
-*.pem
-*.key
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!**/.env.example
 
 # ── Editors / OS ─────────────────────────────────────────────────────────────
 .vscode/
@@ -87,3 +88,4 @@ desktop.ini
 # ── Misc ─────────────────────────────────────────────────────────────────────
 .vercel
 *.log
+
