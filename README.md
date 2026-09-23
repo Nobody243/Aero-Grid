@@ -5,6 +5,7 @@
 Aero-Grid is a full-stack visualization of four classical AI techniques cooperating to plan and execute a multi-stop delivery mission across a 40×40 city grid. A FastAPI backend exposes each algorithm as a stateless endpoint; a Next.js frontend renders every decision step in real time on an interactive canvas.
 
 **Live Demo:** https://aero-grid-24303.vercel.app/
+
 **API Backend:** https://aero-grid.onrender.com
 
 > ⚠️ The backend runs on Render's free plan. The first request after a period of inactivity may take ~30 seconds while the instance cold-starts.
