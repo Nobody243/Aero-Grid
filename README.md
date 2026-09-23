@@ -161,7 +161,7 @@ The frontend is deployed to Vercel under the project `aerogrid-simulator-ag24303
 
 | Variable | Value |
 |---|---|
-| `NEXT_PUBLIC_API_URL` | `https://aero-grid-backend.onrender.com` |
+| `NEXT_PUBLIC_API_URL` | `https://aero-grid.onrender.com` |
 
 **Manual deploy via CLI** (from `frontend/` directory):
 ```bash
